@@ -1,0 +1,89 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Image0.png" />
+    <EmbeddedResource Include="Images\Image1.png" />
+    <EmbeddedResource Include="Images\Image2.png" />
+    <EmbeddedResource Include="Images\Image3.png" />
+    <EmbeddedResource Include="Images\Image4.png" />
+    <EmbeddedResource Include="Images\Image5.png" />
+    <EmbeddedResource Include="Images\Image6.png" />
+    <EmbeddedResource Include="Images\Image7.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.1.0.57" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.800" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Holly.xaml.cs">
+      <DependentUpon>Holly.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MainPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Irene.xaml.cs">
+      <DependentUpon>Irene.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Katie.xaml.cs">
+      <DependentUpon>Katie.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Michael.xaml.cs">
+      <DependentUpon>Michael.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Fiona.xaml.cs">
+      <DependentUpon>Fiona.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Jennifer.xaml.cs">
+      <DependentUpon>Jennifer.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Bill.xaml.cs">
+      <DependentUpon>Bill.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Torrey.xaml.cs">
+      <DependentUpon>Torrey.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Holly.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Bill.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Irene.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Katie.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Michael.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Fiona.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Jennifer.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Torrey.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
