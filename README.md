@@ -2,6 +2,9 @@
 
 You can navigate to the particular xaml page based on the tapped item data (name of the page) using [Activator.CreateInstance](https://docs.microsoft.com/en-us/dotnet/api/system.activator.createinstance?view=netcore-3.1) in Xamarin.Forms [SfListView](https://help.syncfusion.com/xamarin/listview/overview?).
 
+You can also refer the following article.
+https://www.syncfusion.com/kb/11668/how-to-make-navigation-for-a-corresponding-tapped-item-named-page-in-xamarin-forms-listview 
+
 **XAML**
 
 Defined [TapCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommand.html?) in **ListView**.
